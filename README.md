@@ -13,4 +13,4 @@
 
 ![App][logo]
 
-[logo]: images/node-authenticate.png "App"
+[logo]: ../images/node-authenticate.png "App"
