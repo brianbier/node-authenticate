@@ -14,3 +14,4 @@
 ![App][logo]
 
 [logo]: views/images/node-authenticate.png "App"
+
