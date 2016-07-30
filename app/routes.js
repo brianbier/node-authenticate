@@ -75,6 +75,22 @@ module.exports = function(app,passport){
             failureRedirect : '/'
         }));
 
+    // =====================================
+    // GOOGLE ROUTES =====================
+    // =====================================
+    // route for google authentication and login
+    app.get('/auth/google', passport.authenticate('google',{scope: ['profile','email']}));
+
+    // handle the callback after google has authenticated the user
+    app.get('/auth/google/callback',
+        passport.authenticate('google', {
+            successRedirect : '/profile',
+            failureRedirect : '/'
+        }));
+
+
+
+
 
 
 
